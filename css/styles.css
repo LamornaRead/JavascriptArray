@@ -441,7 +441,7 @@ a {
 .container-main {
   margin: 0;
   background-color: #f4ebff;
-  height: 100%;
+  height: 100vh;
 }
 
 /* line 7, ../JavascriptArray/sass/containers/_container.scss */
@@ -451,29 +451,25 @@ a {
   width: 80%;
 }
 
+/* line 12, ../JavascriptArray/sass/containers/_container.scss */
+.container-flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 /* line 1, ../JavascriptArray/sass/sections/_header.scss */
 .header {
   display: flex;
   justify-content: center;
   position: relative;
-  height: 150px;
+  height: 100px;
 }
 
-/* line 8, ../JavascriptArray/sass/sections/_header.scss */
-.header-text {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 0 10px;
-  padding-top: 40px;
-  margin: 0;
-}
-
-/* line 19, ../JavascriptArray/sass/sections/_header.scss */
+/* line 7, ../JavascriptArray/sass/sections/_header.scss */
 .custom-shape-divider-bottom-1686573733 {
   position: absolute;
-  top: 85px;
+  top: 33px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -481,7 +477,7 @@ a {
   transform: rotate(180deg);
 }
 
-/* line 29, ../JavascriptArray/sass/sections/_header.scss */
+/* line 17, ../JavascriptArray/sass/sections/_header.scss */
 .custom-shape-divider-bottom-1686573733 svg {
   position: relative;
   display: block;
@@ -489,14 +485,63 @@ a {
   height: 67px;
 }
 
-/* line 36, ../JavascriptArray/sass/sections/_header.scss */
+/* line 24, ../JavascriptArray/sass/sections/_header.scss */
 .custom-shape-divider-bottom-1686573733 .shape-fill {
   fill: #F4EBFF;
 }
 
 /* line 1, ../JavascriptArray/sass/sections/_content.scss */
 .content {
-  margin-top: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  background-color: #fff;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* line 12, ../JavascriptArray/sass/sections/_content.scss */
+.content-inner {
+  padding: 30px;
+}
+
+/* line 17, ../JavascriptArray/sass/sections/_content.scss */
+.header-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 0 10px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  /* line 17, ../JavascriptArray/sass/sections/_content.scss */
+  .header-text {
+    font-size: 2.5rem;
+  }
+}
+
+/* line 31, ../JavascriptArray/sass/sections/_content.scss */
+.subheader-text {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+/* line 38, ../JavascriptArray/sass/sections/_content.scss */
+.img {
+  max-width: 300px;
+  min-width: 150px;
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */

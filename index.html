@@ -12,10 +12,7 @@
 </head>
 <body>
     <div class="container-main" >
-        <div class="header" style="background-image: url(images/space-g2f7526c66_1280.jpg);">
-            <div>
-                <h1 class="header-text">Send That Image</h1>
-            </div>    
+        <div class="header" style="background-image: url(images/space-g2f7526c66_1280.jpg);"> 
         </div>
         <div class="custom-shape-divider-bottom-1686573733">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -23,14 +20,24 @@
             </svg>
         </div>
 
-
         <div class="container-inner">
-            <div class="content">
-                <div>
-                    <h2>Images</h2>
-                </div>
-                <div>
-                    <img src="images/watercolour_night_sky_background_2607.jpg" alt="placeholder">
+            <div class="container flex">
+                <div class="content">
+                    <div class="bk-img" style="background-image: url(images/space-g2f7526c66_1280.jpg);">
+                        <h1 class="header-text">Send That Image</h1>
+                    </div>
+                    <div class="content-inner">
+                        <div>
+                            <h2 class="subheader-text">Images</h2>
+                        </div>
+                        <div>
+                            <img class="img" src="images/watercolour_night_sky_background_2607.jpg" alt="placeholder">
+                        </div>
+                        <form>
+                            <label for="email">Enter Your email : <i class="fa-solid fa-envelope"></i></label>
+                            <input id="email" name="email" type="email">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
