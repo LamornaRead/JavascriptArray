@@ -1,0 +1,38 @@
+.header {
+    @include flex-center;
+    position: relative;
+    height: 150px;
+}
+
+
+.header-text {
+    color: $white;
+    font-size: 3rem;
+    font-weight: $font-weight--light;
+    text-transform: uppercase;
+    text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
+    padding-top: 40px;
+    margin: 0;
+}
+
+
+.custom-shape-divider-bottom-1686573733 {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686573733 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 67px;
+}
+
+.custom-shape-divider-bottom-1686573733 .shape-fill {
+    fill: #F4EBFF;
+}

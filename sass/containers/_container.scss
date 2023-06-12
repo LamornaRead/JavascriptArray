@@ -1,0 +1,10 @@
+.container-main {
+    margin: 0;   
+    background-color: $light_purple;
+    height: 100%;
+}
+
+.container-inner {
+    @include center;
+    width: 80%;
+}
