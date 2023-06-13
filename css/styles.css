@@ -529,13 +529,41 @@ a {
   padding: 30px;
 }
 
-/* line 18, ../JavascriptArray/sass/sections/_content.scss */
+/* line 19, ../JavascriptArray/sass/sections/_content.scss */
 .content-item {
   display: flex;
   justify-content: center;
 }
 
 /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+.content-item-two {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  .content-item-two {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  .content-item-two {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  .content-item-two {
+    width: 60%;
+  }
+}
+
+/* line 37, ../JavascriptArray/sass/sections/_content.scss */
 .header-text {
   color: #fff;
   font-size: 1.5rem;
@@ -548,13 +576,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 37, ../JavascriptArray/sass/sections/_content.scss */
   .header-text {
     font-size: 2.5rem;
   }
 }
 
-/* line 37, ../JavascriptArray/sass/sections/_content.scss */
+/* line 51, ../JavascriptArray/sass/sections/_content.scss */
 .subheader-text {
   font-size: 1rem;
   letter-spacing: 3px;
@@ -564,13 +592,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 37, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 51, ../JavascriptArray/sass/sections/_content.scss */
   .subheader-text {
     font-size: 1.5rem;
   }
 }
 
-/* line 48, ../JavascriptArray/sass/sections/_content.scss */
+/* line 62, ../JavascriptArray/sass/sections/_content.scss */
 .img {
   max-width: 400px;
   min-width: 150px;
@@ -579,24 +607,26 @@ a {
   border-radius: 10px;
 }
 
-/* line 56, ../JavascriptArray/sass/sections/_content.scss */
+/* line 70, ../JavascriptArray/sass/sections/_content.scss */
 .author {
   font-size: 1rem;
   text-transform: uppercase;
   margin: 0;
-  padding: 15px 0;
+  padding-bottom: 40px;
 }
 
-/* line 62, ../JavascriptArray/sass/sections/_content.scss */
+/* line 76, ../JavascriptArray/sass/sections/_content.scss */
 .enter-email {
   display: flex;
   flex-direction: column;
+  background-color: #5b308b;
   gap: 20px;
-  padding: 15px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
 }
 
 @media (min-width: 992px) {
-  /* line 62, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 76, ../JavascriptArray/sass/sections/_content.scss */
   .enter-email {
     flex-direction: row;
     flex-wrap: wrap;
@@ -605,34 +635,35 @@ a {
   }
 }
 
-/* line 75, ../JavascriptArray/sass/sections/_content.scss */
+/* line 91, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
 @media (min-width: 992px) {
-  /* line 75, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 91, ../JavascriptArray/sass/sections/_content.scss */
   .email-item {
     width: 45%;
   }
 }
 
-/* line 82, ../JavascriptArray/sass/sections/_content.scss */
+/* line 98, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
   font-size: 1rem;
+  color: #fff;
 }
 
 @media (min-width: 992px) {
-  /* line 82, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 98, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 91, ../JavascriptArray/sass/sections/_content.scss */
+/* line 108, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -642,26 +673,46 @@ a {
   border-radius: 5px;
 }
 
-/* line 98, ../JavascriptArray/sass/sections/_content.scss */
+/* line 115, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 104, ../JavascriptArray/sass/sections/_content.scss */
+/* line 121, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn {
   margin-right: auto;
   margin-left: auto;
   display: flex;
   justify-content: center;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   background-color: #291e39;
   padding: 15px 30px;
   margin-top: 15px;
   border-radius: 5px;
   border: none;
+}
+
+/* line 133, ../JavascriptArray/sass/sections/_content.scss */
+.send-btn:hover {
+  text-shadow: #fff 1px 0 10px;
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 576px) {
+  /* line 121, ../JavascriptArray/sass/sections/_content.scss */
+  .send-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 121, ../JavascriptArray/sass/sections/_content.scss */
+  .send-btn {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

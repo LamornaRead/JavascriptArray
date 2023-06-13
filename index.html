@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="container-main" >
-    <!-- container start -->
+    <!-- container-main start -->
         <div class="header" style="background-image: url(images/space-g2f7526c66_1280.jpg);"> 
         </div>
 
@@ -23,14 +23,15 @@
         </div>
 
         <div class="container-inner">
-            <!-- container start -->
+            <!-- container-inner start -->
+
             <div class="container-flex">
                 <div class="content">
                     <div style="background-image: url(images/space-g2f7526c66_1280.jpg);">
                         <h1 class="header-text">Send That Image</h1>
                     </div>
                     <div class="content-inner">
-
+                         
                         <div class="content-item">
                             <h2 class="subheader-text">Images</h2>
                         </div>
@@ -39,13 +40,13 @@
                             <img class="img" src="images/watercolour_night_sky_background_2607.jpg" alt="placeholder">
                         </div>
 
-                        <div class="content-item">
+                        <div class="content-item-two">
                             <h3 class="author">Photo author :</h3>
                         </div>
 
-                        <form class="enter-email">
+                        <form class="enter-email" onsubmit="return validateEmail()">
                             
-                            <label class="email-item form-item-one" for="email">Enter Your email <i class="fa-solid fa-envelope"></i> : </label>
+                            <label class="email-item form-item-one" for="email">Enter Your email <i class="fa-solid fa-envelope"></i></label>
                             <input class="email-item form-item-two" id="email" name="email" type="email">
 
                             <button id="btn" class="send-btn" type="submit" >Send To Email</button>
@@ -65,9 +66,10 @@
 
                 </div>
             </div>
-            <!-- container end -->
+
+            <!-- container-inner end -->
         </div>
-    <!-- container end -->
+    <!-- container-main end -->
     </div>
     <script src="main.js"></script>
 </body>
