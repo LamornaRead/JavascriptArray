@@ -66,6 +66,7 @@
     padding: 15px 0;
     @include mq(large) {
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 10px;
         padding: 15px 60px;
     }
@@ -73,7 +74,9 @@
 
 .email-item{
    width: 100%;
-
+   @include mq(large) {
+    width: 45%
+   }
 }
 
 .form-item-one {
@@ -96,4 +99,18 @@
         box-shadow: 0 0 20px rgba(255, 255, 255, 1);
         border: 1px solid rgba(81, 203, 238, 1);
     }
+}
+
+.send-btn {
+    @include center;
+    display: flex;
+    justify-content: center;
+    color: $white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: $color-secondary;
+    padding: 15px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
 }

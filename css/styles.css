@@ -599,17 +599,25 @@ a {
   /* line 62, ../JavascriptArray/sass/sections/_content.scss */
   .enter-email {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     padding: 15px 60px;
   }
 }
 
-/* line 74, ../JavascriptArray/sass/sections/_content.scss */
+/* line 75, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
-/* line 79, ../JavascriptArray/sass/sections/_content.scss */
+@media (min-width: 992px) {
+  /* line 75, ../JavascriptArray/sass/sections/_content.scss */
+  .email-item {
+    width: 45%;
+  }
+}
+
+/* line 82, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   margin-top: auto;
   margin-bottom: auto;
@@ -618,13 +626,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 79, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 82, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 88, ../JavascriptArray/sass/sections/_content.scss */
+/* line 91, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -634,10 +642,26 @@ a {
   border-radius: 5px;
 }
 
-/* line 95, ../JavascriptArray/sass/sections/_content.scss */
+/* line 98, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
+}
+
+/* line 104, ../JavascriptArray/sass/sections/_content.scss */
+.send-btn {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #291e39;
+  padding: 15px 30px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
