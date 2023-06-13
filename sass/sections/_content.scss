@@ -1,6 +1,5 @@
 .content {
     @include center;
-    margin-top: 100px;
     background-color: $white;
     max-width: 800px;
     width: 100%;
@@ -10,9 +9,16 @@
 }
 
 .content-inner {
-    padding: 30px
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
 }
 
+.content-item {
+    display: flex;
+    justify-content: center;
+}
 
 .header-text {
     color: $white;
@@ -34,10 +40,60 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 0;
+    @include mq(large) {
+        font-size: 1.5rem;
+    }
 }
+
 .img {
-    max-width: 300px;
+    max-width: 400px;
     min-width: 150px;
     width: 100%;
-    margin-bottom: 40px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.author {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 15px 0;
+}
+.enter-email {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 0;
+    @include mq(large) {
+        flex-direction: row;
+        gap: 10px;
+        padding: 15px 60px;
+    }
+}
+
+.email-item{
+   width: 100%;
+
+}
+
+.form-item-one {
+    @include center-box;
+    text-align: center;
+    font-size: 1rem;
+    @include mq(large) {
+        font-size: 1.2rem;
+    }
+}
+
+.form-item-two {
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    border-radius: 5px;
+    &:focus {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
 }

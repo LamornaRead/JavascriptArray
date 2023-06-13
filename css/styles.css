@@ -441,21 +441,40 @@ a {
 .container-main {
   margin: 0;
   background-color: #f4ebff;
-  height: 100vh;
+  height: 100%;
 }
 
 /* line 7, ../JavascriptArray/sass/containers/_container.scss */
 .container-inner {
   margin-right: auto;
   margin-left: auto;
-  width: 80%;
+  width: 90%;
+  margin-top: 50px;
+  padding-bottom: 150px;
 }
 
-/* line 12, ../JavascriptArray/sass/containers/_container.scss */
+@media (min-width: 768px) {
+  /* line 7, ../JavascriptArray/sass/containers/_container.scss */
+  .container-inner {
+    margin-top: 100px;
+    width: 80%;
+  }
+}
+
+/* line 18, ../JavascriptArray/sass/containers/_container.scss */
 .container-flex {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   width: 100%;
+  gap: 40px;
+}
+
+@media (min-width: 1200px) {
+  /* line 18, ../JavascriptArray/sass/containers/_container.scss */
+  .container-flex {
+    flex-direction: row;
+  }
 }
 
 /* line 1, ../JavascriptArray/sass/sections/_header.scss */
@@ -494,7 +513,6 @@ a {
 .content {
   margin-right: auto;
   margin-left: auto;
-  margin-top: 100px;
   background-color: #fff;
   max-width: 800px;
   width: 100%;
@@ -503,12 +521,21 @@ a {
   box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* line 12, ../JavascriptArray/sass/sections/_content.scss */
+/* line 11, ../JavascriptArray/sass/sections/_content.scss */
 .content-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding: 30px;
 }
 
-/* line 17, ../JavascriptArray/sass/sections/_content.scss */
+/* line 18, ../JavascriptArray/sass/sections/_content.scss */
+.content-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 23, ../JavascriptArray/sass/sections/_content.scss */
 .header-text {
   color: #fff;
   font-size: 1.5rem;
@@ -521,13 +548,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 17, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
   .header-text {
     font-size: 2.5rem;
   }
 }
 
-/* line 31, ../JavascriptArray/sass/sections/_content.scss */
+/* line 37, ../JavascriptArray/sass/sections/_content.scss */
 .subheader-text {
   font-size: 1rem;
   letter-spacing: 3px;
@@ -536,12 +563,81 @@ a {
   margin-top: 0;
 }
 
-/* line 38, ../JavascriptArray/sass/sections/_content.scss */
+@media (min-width: 992px) {
+  /* line 37, ../JavascriptArray/sass/sections/_content.scss */
+  .subheader-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 48, ../JavascriptArray/sass/sections/_content.scss */
 .img {
-  max-width: 300px;
+  max-width: 400px;
   min-width: 150px;
   width: 100%;
-  margin-bottom: 40px;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+/* line 56, ../JavascriptArray/sass/sections/_content.scss */
+.author {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 15px 0;
+}
+
+/* line 62, ../JavascriptArray/sass/sections/_content.scss */
+.enter-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 0;
+}
+
+@media (min-width: 992px) {
+  /* line 62, ../JavascriptArray/sass/sections/_content.scss */
+  .enter-email {
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px 60px;
+  }
+}
+
+/* line 74, ../JavascriptArray/sass/sections/_content.scss */
+.email-item {
+  width: 100%;
+}
+
+/* line 79, ../JavascriptArray/sass/sections/_content.scss */
+.form-item-one {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  /* line 79, ../JavascriptArray/sass/sections/_content.scss */
+  .form-item-one {
+    font-size: 1.2rem;
+  }
+}
+
+/* line 88, ../JavascriptArray/sass/sections/_content.scss */
+.form-item-two {
+  font-size: .9rem;
+  outline: none;
+  border: none;
+  border: 1px solid grey;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* line 95, ../JavascriptArray/sass/sections/_content.scss */
+.form-item-two:focus {
+  box-shadow: 0 0 20px white;
+  border: 1px solid #51cbee;
 }
 
 /*# sourceMappingURL=styles.css.map */
