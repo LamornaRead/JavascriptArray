@@ -600,11 +600,9 @@ a {
 
 /* line 62, ../JavascriptArray/sass/sections/_content.scss */
 .img {
-  max-width: 400px;
-  min-width: 150px;
-  width: 100%;
   margin: 15px 0;
   border-radius: 10px;
+  border: 1px solid grey;
 }
 
 /* line 70, ../JavascriptArray/sass/sections/_content.scss */

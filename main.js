@@ -38,5 +38,24 @@ function validateEmail() {
 }
 
 //fetch data ////////////////
+const url ='https://picsum.photos/200';
+let img = document.getElementById('image');
+
+
+
+
+function fetchImage() {
+    fetch(url)
+    .then(response => response.headers.get('picsum-id'))
+    .then(info => 'https://picsum.photos/id/' + info + '/info' )
+    .then(resolve => {
+        fetch(resolve)
+        .then(response => response.json())
+        .then(img.src = url)
+    })
+    .catch(error => console.error(error));
+}
+
+window.addEventListener('load', fetchImage);
 
 
