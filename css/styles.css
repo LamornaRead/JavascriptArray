@@ -605,7 +605,7 @@ a {
   border: 1px solid grey;
 }
 
-/* line 70, ../JavascriptArray/sass/sections/_content.scss */
+/* line 68, ../JavascriptArray/sass/sections/_content.scss */
 .author {
   font-size: 1rem;
   text-transform: uppercase;
@@ -613,7 +613,7 @@ a {
   padding-bottom: 40px;
 }
 
-/* line 76, ../JavascriptArray/sass/sections/_content.scss */
+/* line 74, ../JavascriptArray/sass/sections/_content.scss */
 .enter-email {
   display: flex;
   flex-direction: column;
@@ -624,7 +624,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 76, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 74, ../JavascriptArray/sass/sections/_content.scss */
   .enter-email {
     flex-direction: row;
     flex-wrap: wrap;
@@ -633,19 +633,19 @@ a {
   }
 }
 
-/* line 91, ../JavascriptArray/sass/sections/_content.scss */
+/* line 89, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
 @media (min-width: 992px) {
-  /* line 91, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 89, ../JavascriptArray/sass/sections/_content.scss */
   .email-item {
     width: 45%;
   }
 }
 
-/* line 98, ../JavascriptArray/sass/sections/_content.scss */
+/* line 96, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   margin-top: auto;
   margin-bottom: auto;
@@ -655,13 +655,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 98, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 96, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 108, ../JavascriptArray/sass/sections/_content.scss */
+/* line 106, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -671,13 +671,13 @@ a {
   border-radius: 5px;
 }
 
-/* line 115, ../JavascriptArray/sass/sections/_content.scss */
+/* line 113, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 121, ../JavascriptArray/sass/sections/_content.scss */
+/* line 119, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn {
   margin-right: auto;
   margin-left: auto;
@@ -693,21 +693,21 @@ a {
   border: none;
 }
 
-/* line 133, ../JavascriptArray/sass/sections/_content.scss */
+/* line 131, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 576px) {
-  /* line 121, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 119, ../JavascriptArray/sass/sections/_content.scss */
   .send-btn {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 121, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 119, ../JavascriptArray/sass/sections/_content.scss */
   .send-btn {
     font-size: 1.5rem;
   }
