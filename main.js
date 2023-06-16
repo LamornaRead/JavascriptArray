@@ -44,18 +44,23 @@ function validateEmail() {
 
 function fetchImage() {
     fetch(url)
-    .then(response => response.headers.get('picsum-id'))
-    .then(info => 'https://picsum.photos/id/' + info + '/info' )
-    .then(resolve => {
-        fetch(resolve)
-        .then(response => response.json(console.log(response.url)))
-        .then(response => img.src = response.url)
-        // .then(img.src = response.url)
-    })
+    .then(response => img.src = response.url)
     .catch(error => console.error(error));
 }
+// function fetchImage(url) {
+//     fetch(url)
+//     .then(response => response.headers.get('picsum-id'))
+//     .then(info => 'https://picsum.photos/id/' + info + '/info' )
+//     .then(resolve => {
+//         fetch(resolve)
+//         .then(response => response.json(console.log(response.url)))
+//         .then(response => img.src = response.url)
+//         // .then(img.src = response.url)
+//     })
+//     .catch(error => console.error(error));
+// }
 
-window.addEventListener('load', fetchImage);
+window.addEventListener('load', fetchImage('https://picsum.photos/200'));
 
 
 // display data to email/////////////////
@@ -66,11 +71,16 @@ function assignImage() {
     
     
 
-    if(checkEmailPresent(input.value)) {
+    if(checkEmailPresent(input.value)) { // if the image is present
 
+        //get the index of the email in array
+
+
+        //use the index to push the image in the array
+        //eg pic[i].push.(img)
     } else { // if the image isnt present //
         lastEmail.push(input.value);
-        pic.push(img.src);
+        pic.push([img.src]);
     }
 
     console.log(lastEmail);
