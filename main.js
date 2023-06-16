@@ -8,6 +8,7 @@ const url ='https://picsum.photos/200';
 let img = document.getElementById('image');
 
 let lastEmail = [];
+let pic = [];
 
 //functions ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -38,6 +39,7 @@ function validateEmail() {
 
 }
 
+
 //fetch data ////////////////
 
 function fetchImage() {
@@ -46,8 +48,9 @@ function fetchImage() {
     .then(info => 'https://picsum.photos/id/' + info + '/info' )
     .then(resolve => {
         fetch(resolve)
-        .then(response => response.json())
-        .then(img.src = url)
+        .then(response => response.json(console.log(response.url)))
+        .then(response => img.src = response.url)
+        // .then(img.src = response.url)
     })
     .catch(error => console.error(error));
 }
@@ -61,15 +64,28 @@ function assignImage() {
     let contentContainer = document.querySelector('.email-img');
     let displayContent = document.querySelector('.assigned');
     
-    // lastEmail.push(email.toString());
+    
 
-    for (let i = 0; i< lastEmail.length; i++) {
-        if(lastEmail[i] === email.toString()) {
-            console.log('this matches');
-        } else {
-            console.log('this doesnt match');
-            lastEmail.push(email.toString());
-        }
+    if(checkEmailPresent(input.value)) {
+
+    } else { // if the image isnt present //
+        lastEmail.push(input.value);
+        pic.push(img.src);
     }
+
     console.log(lastEmail);
+    console.log(input.value);
+    console.log(pic);
+}
+
+//// new stuff //////
+
+function checkEmailPresent(emailInput) {
+    for (let i = 0; i < lastEmail.length; i++) {
+        if(lastEmail[i] == emailInput) {
+            console.log('this matches');
+            return true;
+        } 
+    }
+    return false;
 }
