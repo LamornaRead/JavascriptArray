@@ -6,6 +6,7 @@ const input = document.getElementById('email');
 const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const url ='https://picsum.photos/200';
 let img = document.getElementById('image');
+const newImgBtn = document.getElementById('new-image');
 
 let lastEmail = [];
 let pic = [];
@@ -47,18 +48,8 @@ function fetchImage() {
     .then(response => img.src = response.url)
     .catch(error => console.error(error));
 }
-// function fetchImage(url) {
-//     fetch(url)
-//     .then(response => response.headers.get('picsum-id'))
-//     .then(info => 'https://picsum.photos/id/' + info + '/info' )
-//     .then(resolve => {
-//         fetch(resolve)
-//         .then(response => response.json(console.log(response.url)))
-//         .then(response => img.src = response.url)
-//         // .then(img.src = response.url)
-//     })
-//     .catch(error => console.error(error));
-// }
+
+newImgBtn.addEventListener('click', fetchImage);
 
 window.addEventListener('load', fetchImage('https://picsum.photos/200'));
 

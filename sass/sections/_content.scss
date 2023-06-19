@@ -65,12 +65,7 @@
     border: 1px solid grey;
 }
 
-.author {
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin: 0;
-    padding-bottom: 40px;
-}
+
 .enter-email {
     display: flex;
     flex-direction: column;
@@ -116,18 +111,27 @@
     }
 }
 
-.send-btn {
+.btn {
     @include center;
-    display: flex;
-    justify-content: center;
     color: $white;
     font-size: 1rem;
     text-transform: uppercase;
-    background-color: $color-secondary;
     padding: 15px 30px;
     margin-top: 15px;
     border-radius: 5px;
     border: none;
+    background-color: $color-secondary;
+}
+
+.refresh-btn {
+    margin-bottom: 20px;
+    &:hover {
+        background-color: lighten($color: $color-secondary, $amount: 10%);
+    }
+}
+
+.send-btn {
+    
     &:hover {
         text-shadow: $white 1px 0 10px;
         box-shadow: 0 0 20px 10px rgba($color: $white, $alpha: .6);
