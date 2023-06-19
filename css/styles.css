@@ -630,14 +630,7 @@ a {
   width: 100%;
 }
 
-@media (min-width: 992px) {
-  /* line 84, ../JavascriptArray/sass/sections/_content.scss */
-  .email-item {
-    width: 45%;
-  }
-}
-
-/* line 91, ../JavascriptArray/sass/sections/_content.scss */
+/* line 88, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   margin-top: auto;
   margin-bottom: auto;
@@ -647,13 +640,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 91, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 88, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 101, ../JavascriptArray/sass/sections/_content.scss */
+/* line 98, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -663,13 +656,13 @@ a {
   border-radius: 5px;
 }
 
-/* line 108, ../JavascriptArray/sass/sections/_content.scss */
+/* line 105, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 114, ../JavascriptArray/sass/sections/_content.scss */
+/* line 111, ../JavascriptArray/sass/sections/_content.scss */
 .btn {
   margin-right: auto;
   margin-left: auto;
@@ -683,31 +676,31 @@ a {
   background-color: #291e39;
 }
 
-/* line 126, ../JavascriptArray/sass/sections/_content.scss */
+/* line 123, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn {
   margin-bottom: 20px;
 }
 
-/* line 128, ../JavascriptArray/sass/sections/_content.scss */
+/* line 125, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn:hover {
   background-color: #41305a;
 }
 
-/* line 135, ../JavascriptArray/sass/sections/_content.scss */
+/* line 132, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 576px) {
-  /* line 133, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 130, ../JavascriptArray/sass/sections/_content.scss */
   .send-btn {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 133, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 130, ../JavascriptArray/sass/sections/_content.scss */
   .send-btn {
     font-size: 1.5rem;
   }

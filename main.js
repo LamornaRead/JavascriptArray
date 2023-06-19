@@ -60,33 +60,55 @@ function assignImage() {
     let contentContainer = document.querySelector('.email-img');
     let displayContent = document.querySelector('.assigned');
     
-    
+
 
     if(checkEmailPresent(input.value)) { // if the image is present
 
         //get the index of the email in array
-
+        let emailIndex = lastEmail.indexOf(input.value);
+        console.log(emailIndex);
 
         //use the index to push the image in the array
-        //eg pic[i].push.(img)
+ 
+        pic[emailIndex].push(img.src);
+     
     } else { // if the image isnt present //
         lastEmail.push(input.value);
         pic.push([img.src]);
     }
+    
+    
+    checkImage(img.src);
 
     console.log(lastEmail);
-    console.log(input.value);
+    // console.log(input.value);
     console.log(pic);
+    // console.log(img.src);
 }
 
 //// new stuff //////
 
+
+
 function checkEmailPresent(emailInput) {
     for (let i = 0; i < lastEmail.length; i++) {
         if(lastEmail[i] == emailInput) {
-            console.log('this matches');
+            console.log('this matches an email');
             return true;
         } 
     }
     return false;
 }
+
+
+function checkImage(src) {
+
+    for (let i = 0; i < pic.length; i++) {
+        if(pic[i][i] == src) {
+            console.log('this matches an image');
+            return true;
+        } 
+    }
+    return false;
+}
+
