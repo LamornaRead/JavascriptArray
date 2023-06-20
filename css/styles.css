@@ -450,13 +450,13 @@ a {
   margin-left: auto;
   width: 90%;
   margin-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 180px;
 }
 
 @media (min-width: 768px) {
   /* line 7, ../JavascriptArray/sass/containers/_container.scss */
   .container-inner {
-    margin-top: 100px;
+    margin-top: 70px;
     width: 80%;
   }
 }
@@ -526,16 +526,23 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 30px;
+  padding: 20px;
 }
 
-/* line 19, ../JavascriptArray/sass/sections/_content.scss */
+@media (min-width: 992px) {
+  /* line 11, ../JavascriptArray/sass/sections/_content.scss */
+  .content-inner {
+    padding: 30px;
+  }
+}
+
+/* line 22, ../JavascriptArray/sass/sections/_content.scss */
 .content-item {
   display: flex;
   justify-content: center;
 }
 
-/* line 23, ../JavascriptArray/sass/sections/_content.scss */
+/* line 26, ../JavascriptArray/sass/sections/_content.scss */
 .content-item-two {
   margin-right: auto;
   margin-left: auto;
@@ -543,27 +550,27 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 26, ../JavascriptArray/sass/sections/_content.scss */
   .content-item-two {
     width: 90%;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 26, ../JavascriptArray/sass/sections/_content.scss */
   .content-item-two {
     width: 80%;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 23, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 26, ../JavascriptArray/sass/sections/_content.scss */
   .content-item-two {
     width: 60%;
   }
 }
 
-/* line 37, ../JavascriptArray/sass/sections/_content.scss */
+/* line 40, ../JavascriptArray/sass/sections/_content.scss */
 .header-text {
   color: #fff;
   font-size: 1.5rem;
@@ -576,13 +583,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 37, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 40, ../JavascriptArray/sass/sections/_content.scss */
   .header-text {
     font-size: 2.5rem;
   }
 }
 
-/* line 51, ../JavascriptArray/sass/sections/_content.scss */
+/* line 54, ../JavascriptArray/sass/sections/_content.scss */
 .subheader-text {
   font-size: 1rem;
   letter-spacing: 3px;
@@ -592,20 +599,20 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 51, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 54, ../JavascriptArray/sass/sections/_content.scss */
   .subheader-text {
     font-size: 1.5rem;
   }
 }
 
-/* line 62, ../JavascriptArray/sass/sections/_content.scss */
+/* line 65, ../JavascriptArray/sass/sections/_content.scss */
 .img {
   margin: 15px 0;
   border-radius: 10px;
   border: 1px solid grey;
 }
 
-/* line 69, ../JavascriptArray/sass/sections/_content.scss */
+/* line 72, ../JavascriptArray/sass/sections/_content.scss */
 .enter-email {
   display: flex;
   flex-direction: column;
@@ -616,7 +623,7 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 69, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 72, ../JavascriptArray/sass/sections/_content.scss */
   .enter-email {
     flex-direction: row;
     flex-wrap: wrap;
@@ -625,12 +632,12 @@ a {
   }
 }
 
-/* line 84, ../JavascriptArray/sass/sections/_content.scss */
+/* line 87, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
-/* line 88, ../JavascriptArray/sass/sections/_content.scss */
+/* line 91, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   margin-top: auto;
   margin-bottom: auto;
@@ -640,13 +647,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 88, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 91, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 98, ../JavascriptArray/sass/sections/_content.scss */
+/* line 101, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -656,13 +663,13 @@ a {
   border-radius: 5px;
 }
 
-/* line 105, ../JavascriptArray/sass/sections/_content.scss */
+/* line 108, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 111, ../JavascriptArray/sass/sections/_content.scss */
+/* line 114, ../JavascriptArray/sass/sections/_content.scss */
 .btn {
   margin-right: auto;
   margin-left: auto;
@@ -676,34 +683,76 @@ a {
   background-color: #291e39;
 }
 
-/* line 123, ../JavascriptArray/sass/sections/_content.scss */
+/* line 126, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn {
   margin-bottom: 20px;
 }
 
-/* line 125, ../JavascriptArray/sass/sections/_content.scss */
+/* line 128, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn:hover {
   background-color: #41305a;
 }
 
-/* line 132, ../JavascriptArray/sass/sections/_content.scss */
+/* line 135, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
 }
 
 @media (min-width: 576px) {
-  /* line 130, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 133, ../JavascriptArray/sass/sections/_content.scss */
   .send-btn {
     font-size: 1.2rem;
   }
 }
 
 @media (min-width: 992px) {
-  /* line 130, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 133, ../JavascriptArray/sass/sections/_content.scss */
   .send-btn {
     font-size: 1.5rem;
   }
+}
+
+/* line 1, ../JavascriptArray/sass/sections/_javastyles.scss */
+.user-data {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* line 6, ../JavascriptArray/sass/sections/_javastyles.scss */
+.user {
+  background-color: #5b308b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 16, ../JavascriptArray/sass/sections/_javastyles.scss */
+.email-header {
+  font-size: .7rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: #fff 1px 0 10px;
+  text-transform: uppercase;
+  padding: 15px 10px;
+  margin: 0;
+}
+
+/* line 27, ../JavascriptArray/sass/sections/_javastyles.scss */
+.user-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  gap: 15px;
+}
+
+/* line 34, ../JavascriptArray/sass/sections/_javastyles.scss */
+.small-img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #f4ebff;
 }
 
 /*# sourceMappingURL=styles.css.map */

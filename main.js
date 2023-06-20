@@ -123,7 +123,7 @@ function displayData() {
    const content = document.querySelector('.assigned');
    
    content.innerHTML = `
-   <ul class="user">
+   <ul class="user-data">
    ${generateListItems(lastEmail)}
    </ul>
    `;
@@ -131,13 +131,12 @@ function displayData() {
 }
 
 function generateListItems(arg) {
-   let emailIndex = lastEmail.indexOf(input.value);
     let items = "";
     for(let i = 0; i < arg.length; i++) {
         items += `
-        <li>
-        <div class="user-email">
-        <h3>${arg[i]}</h3>
+        <li class="user">
+        <div class="user-email" style="background-image: url(images/space-g2f7526c66_1280.jpg);">
+        <h3 class="email-header">${arg[i]}</h3>
         </div>
         <div class="user-imgs">
         ${generateImageItems(pic[i])}
