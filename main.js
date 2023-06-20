@@ -8,16 +8,16 @@ const url ='https://picsum.photos/200';
 let img = document.getElementById('image');
 const newImgBtn = document.getElementById('new-image');
 
+
 let lastEmail = [];
 let pic = [];
 
 //functions ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-// validate email function ////
+// validate email function /////////////////////////////////
 
 function validateEmail() {
-
     // test email false
     if(!emailFormat.test(email) || email == 0) {
           input.style.border = '1px solid red';
@@ -37,7 +37,6 @@ function validateEmail() {
     });
     assignImage();
     console.log('Success');
-
 }
 
 
@@ -54,26 +53,27 @@ newImgBtn.addEventListener('click', fetchImage);
 window.addEventListener('load', fetchImage('https://picsum.photos/200'));
 
 
-// display data to email/////////////////
+// assign data to email/////////////////////////////////////////////////
 
 function assignImage() {
-    let contentContainer = document.querySelector('.email-img');
-    let displayContent = document.querySelector('.assigned');
-    
-
 
     if(checkEmailPresent(input.value)) { // if the image is present
 
         //get the index of the email in array
         let emailIndex = lastEmail.indexOf(input.value);
-        console.log(emailIndex);
+
+        // console log to check the index matches
+        // console.log(emailIndex);
 
         //use the index to push the image in the array
- 
-        pic[emailIndex].push(img.src);
-     
-    } else { // if the image isnt present //
+        if(checkImage(img.src)) {
+
+        } else {
+            pic[emailIndex].push(img.src);
+        }          
+    } else { // if the email isnt present //
         lastEmail.push(input.value);
+        //creates new image array for new email
         pic.push([img.src]);
     }
     
@@ -86,14 +86,14 @@ function assignImage() {
     // console.log(img.src);
 }
 
-//// new stuff //////
+//// check functions /////////////////////////////////////////////////
 
 
 
 function checkEmailPresent(emailInput) {
     for (let i = 0; i < lastEmail.length; i++) {
         if(lastEmail[i] == emailInput) {
-            console.log('this matches an email');
+            // console.log('this matches an email');
             return true;
         } 
     }
@@ -102,13 +102,15 @@ function checkEmailPresent(emailInput) {
 
 
 function checkImage(src) {
+        let emailIndex = lastEmail.indexOf(input.value);
 
-    for (let i = 0; i < pic.length; i++) {
-        if(pic[i][i] == src) {
-            console.log('this matches an image');
+    for (let i = 0; i < pic[emailIndex].length; i++) {
+        if(pic[emailIndex][i] == src) {
+            // console.log('this matches an image');
             return true;
         } 
     }
     return false;
 }
+
 
