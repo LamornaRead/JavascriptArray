@@ -1,5 +1,4 @@
 // vars //////////////////////////////////////////////////////////////////////////////////////////////////////////
-const section = document.getElementById('img-container');
 const button = document.getElementById('btn');
 const email = document.getElementById('email').value;
 const input = document.getElementById('email');
@@ -8,6 +7,7 @@ const url ='https://picsum.photos/200';
 let img = document.getElementById('image');
 const newImgBtn = document.getElementById('new-image');
 
+// var arrays/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let lastEmail = [];
 let pic = [];
@@ -36,6 +36,7 @@ function validateEmail() {
         // event.target.reset();
     });
     assignImage();
+    displayData();
     console.log('Success');
 }
 
@@ -114,3 +115,41 @@ function checkImage(src) {
 }
 
 
+//display functions ///////////////////////////////////////////////////////
+
+
+function displayData() {
+   let emailIndex = lastEmail.indexOf(input.value);
+   const content = document.querySelector('.assigned');
+   
+   content.innerHTML = `
+   <ul class="user">
+   ${generateListItems(lastEmail)}
+   </ul>
+   `;
+
+}
+
+function generateListItems(arg) {
+   let emailIndex = lastEmail.indexOf(input.value);
+    let items = "";
+    for(let i = 0; i < arg.length; i++) {
+        items += `
+        <li>
+        <div class="user-email">
+        <h3>${arg[i]}</h3>
+        </div>
+        <div class="user-imgs">
+        ${generateImageItems(pic[i])}
+        </div>
+        </li>`;
+    }
+    return items;
+}
+function generateImageItems(arg) {
+    let items = "";
+    for(let i = 0; i < arg.length; i++) {
+        items += `<img class="small-img" src="${arg[i]}" alt="random image">`;
+    }
+    return items;
+}
