@@ -31,27 +31,27 @@
                         <h1 class="header-text">Send That Image</h1>
                     </div>
                     <div class="content-inner">
-                         
-                        <div class="content-item">
-                            <h2 class="subheader-text">Images</h2>
+                        <div class="content-wrapper" style="background-image: url(images/space-g2f7526c66_1280.jpg);">
+                            <div id="img-container" class="content-item">
+                                <img id="image" src="" class="img">
+                            </div>
+
+                            <div class="content-item">
+                                <button id="new-image" class="refresh-btn">New image</button>
+                            </div>
+
+                            <form class="enter-email" onsubmit="return validateEmail()">
+                                
+                                <label class="email-item form-item-one" for="email">Enter Your email <i class="fa-solid fa-envelope"></i></label>
+                                <input class="email-item form-item-two" id="email" name="email" type="email">
+
+                                <div class="button-container">
+                                    <button id="btn" class="send-btn btn" type="submit" >Send To Email</button>
+                                </div>
+                                
+
+                            </form>
                         </div>
-
-                        <div id="img-container" class="content-item">
-                            <img id="image" src="" class="img">
-                        </div>
-
-                        <div class="content-item">
-                            <button id="new-image" class="btn refresh-btn">New image</button>
-                        </div>
-
-                        <form class="enter-email" onsubmit="return validateEmail()">
-                            
-                            <label class="email-item form-item-one" for="email">Enter Your email <i class="fa-solid fa-envelope"></i></label>
-                            <input class="email-item form-item-two" id="email" name="email" type="email">
-
-                            <button id="btn" class="send-btn btn" type="submit" >Send To Email</button>
-
-                        </form>
                     </div>
                 </div>
 

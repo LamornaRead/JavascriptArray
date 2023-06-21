@@ -9,15 +9,14 @@
    overflow: hidden;   
 }
 
-.user-email{
-    // background-color: $white;
-}
+
 
 .email-header{
     font-size: .7rem;
     font-weight: $font-weight--light;
     letter-spacing: 3px;
     color: $white;
+    text-align: center;
     text-shadow: $white 1px 0 10px;
     text-transform: uppercase;
     padding: 15px 10px;

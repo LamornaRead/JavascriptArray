@@ -456,7 +456,7 @@ a {
 @media (min-width: 768px) {
   /* line 7, ../JavascriptArray/sass/containers/_container.scss */
   .container-inner {
-    margin-top: 70px;
+    margin-top: 50px;
     width: 80%;
   }
 }
@@ -536,41 +536,19 @@ a {
   }
 }
 
-/* line 22, ../JavascriptArray/sass/sections/_content.scss */
+/* line 20, ../JavascriptArray/sass/sections/_content.scss */
+.content-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 26, ../JavascriptArray/sass/sections/_content.scss */
 .content-item {
   display: flex;
   justify-content: center;
 }
 
-/* line 26, ../JavascriptArray/sass/sections/_content.scss */
-.content-item-two {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-}
-
-@media (min-width: 576px) {
-  /* line 26, ../JavascriptArray/sass/sections/_content.scss */
-  .content-item-two {
-    width: 90%;
-  }
-}
-
-@media (min-width: 768px) {
-  /* line 26, ../JavascriptArray/sass/sections/_content.scss */
-  .content-item-two {
-    width: 80%;
-  }
-}
-
-@media (min-width: 992px) {
-  /* line 26, ../JavascriptArray/sass/sections/_content.scss */
-  .content-item-two {
-    width: 60%;
-  }
-}
-
-/* line 40, ../JavascriptArray/sass/sections/_content.scss */
+/* line 32, ../JavascriptArray/sass/sections/_content.scss */
 .header-text {
   color: #fff;
   font-size: 1.5rem;
@@ -583,13 +561,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 40, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 32, ../JavascriptArray/sass/sections/_content.scss */
   .header-text {
     font-size: 2.5rem;
   }
 }
 
-/* line 54, ../JavascriptArray/sass/sections/_content.scss */
+/* line 46, ../JavascriptArray/sass/sections/_content.scss */
 .subheader-text {
   font-size: 1rem;
   letter-spacing: 3px;
@@ -599,61 +577,62 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 54, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 46, ../JavascriptArray/sass/sections/_content.scss */
   .subheader-text {
     font-size: 1.5rem;
   }
 }
 
-/* line 65, ../JavascriptArray/sass/sections/_content.scss */
+/* line 57, ../JavascriptArray/sass/sections/_content.scss */
 .img {
-  margin: 15px 0;
+  min-width: 100px;
+  max-width: 250px;
+  width: 100%;
+  margin: 30px 10px;
   border-radius: 10px;
-  border: 1px solid grey;
+  border: 2px solid #fff;
 }
 
-/* line 72, ../JavascriptArray/sass/sections/_content.scss */
-.enter-email {
-  display: flex;
-  flex-direction: column;
-  background-color: #5b308b;
-  gap: 20px;
-  padding: 15px 20px;
-  border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-  /* line 72, ../JavascriptArray/sass/sections/_content.scss */
-  .enter-email {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px 60px;
+@media (min-width: 768px) {
+  /* line 57, ../JavascriptArray/sass/sections/_content.scss */
+  .img {
+    border: 5px solid #fff;
   }
 }
 
-/* line 87, ../JavascriptArray/sass/sections/_content.scss */
+/* line 70, ../JavascriptArray/sass/sections/_content.scss */
+.enter-email {
+  background-color: #5b308b;
+  border-radius: 0 0 10px 10px;
+  border-top: 1px solid grey;
+}
+
+/* line 76, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
-/* line 91, ../JavascriptArray/sass/sections/_content.scss */
+/* line 80, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
-  margin-top: auto;
-  margin-bottom: auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background-color: #291e39;
   font-size: 1rem;
+  line-height: 1.1rem;
   color: #fff;
+  padding: 15px 0;
 }
 
 @media (min-width: 992px) {
-  /* line 91, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 80, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 101, ../JavascriptArray/sass/sections/_content.scss */
+/* line 95, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -663,18 +642,16 @@ a {
   border-radius: 5px;
 }
 
-/* line 108, ../JavascriptArray/sass/sections/_content.scss */
+/* line 102, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 114, ../JavascriptArray/sass/sections/_content.scss */
+/* line 108, ../JavascriptArray/sass/sections/_content.scss */
 .btn {
-  margin-right: auto;
-  margin-left: auto;
   color: #fff;
-  font-size: 1rem;
+  font-size: .9rem;
   text-transform: uppercase;
   padding: 15px 30px;
   margin-top: 15px;
@@ -683,7 +660,7 @@ a {
   background-color: #291e39;
 }
 
-/* line 124, ../JavascriptArray/sass/sections/_content.scss */
+/* line 117, ../JavascriptArray/sass/sections/_content.scss */
 .btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
@@ -691,28 +668,54 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 114, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 108, ../JavascriptArray/sass/sections/_content.scss */
   .btn {
     font-size: 1.2rem;
+    border: none;
   }
 }
 
-/* line 134, ../JavascriptArray/sass/sections/_content.scss */
+/* line 128, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn {
   margin-bottom: 20px;
+  background-color: #f4ebff;
+  color: #5b308b;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
 }
 
-/* line 142, ../JavascriptArray/sass/sections/_content.scss */
+/* line 137, ../JavascriptArray/sass/sections/_content.scss */
+.refresh-btn:hover {
+  color: #291e39;
+  background-color: #d8b8ff;
+}
+
+/* line 143, ../JavascriptArray/sass/sections/_content.scss */
+.send-btn {
+  margin: 20px 0;
+}
+
+/* line 146, ../JavascriptArray/sass/sections/_content.scss */
 .button-container {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-/* line 148, ../JavascriptArray/sass/sections/_content.scss */
+/* line 152, ../JavascriptArray/sass/sections/_content.scss */
 .remove-btn {
-  width: 50%;
+  width: 60%;
   visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  /* line 152, ../JavascriptArray/sass/sections/_content.scss */
+  .remove-btn {
+    width: 40%;
+  }
 }
 
 /* line 1, ../JavascriptArray/sass/sections/_javastyles.scss */
@@ -729,12 +732,13 @@ a {
   overflow: hidden;
 }
 
-/* line 16, ../JavascriptArray/sass/sections/_javastyles.scss */
+/* line 14, ../JavascriptArray/sass/sections/_javastyles.scss */
 .email-header {
   font-size: .7rem;
   font-weight: 300;
   letter-spacing: 3px;
   color: #fff;
+  text-align: center;
   text-shadow: #fff 1px 0 10px;
   text-transform: uppercase;
   padding: 15px 10px;
@@ -742,13 +746,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 16, ../JavascriptArray/sass/sections/_javastyles.scss */
+  /* line 14, ../JavascriptArray/sass/sections/_javastyles.scss */
   .email-header {
     font-size: .9rem;
   }
 }
 
-/* line 30, ../JavascriptArray/sass/sections/_javastyles.scss */
+/* line 29, ../JavascriptArray/sass/sections/_javastyles.scss */
 .user-imgs {
   display: flex;
   flex-wrap: wrap;
@@ -757,7 +761,7 @@ a {
   gap: 15px;
 }
 
-/* line 38, ../JavascriptArray/sass/sections/_javastyles.scss */
+/* line 37, ../JavascriptArray/sass/sections/_javastyles.scss */
 .small-img {
   width: 100px;
   height: auto;

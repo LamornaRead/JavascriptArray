@@ -17,25 +17,17 @@
         padding: 30px;
     }
 }
+.content-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 
 .content-item {
     display: flex;
     justify-content: center;
 }
-.content-item-two {
-    @include center;
-    width: 100%;
-    @include mq(small) {
-        width: 90%;
-    }
-    @include mq(medium) {
-        width: 80%;
-    }
-    @include mq(large) {
-        width: 60%;
-    }
-}
+
 
 .header-text {
     color: $white;
@@ -63,25 +55,22 @@
 }
 
 .img {
-    margin: 15px 0;
+    min-width: 100px;
+    max-width: 250px;
+    width: 100%;
+    margin: 30px 10px;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 2px solid $white;
+    @include mq(medium) {
+        border: 5px solid $white;
+    }
 }
 
 
 .enter-email {
-    display: flex;
-    flex-direction: column;
     background-color: $color-primary;
-    gap: 20px;
-    padding: 15px 20px;
-    border-radius: 10px;
-    @include mq(large) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 15px 60px;
-    }
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid grey;
 }
 
 .email-item{
@@ -89,10 +78,15 @@
 }
 
 .form-item-one {
-    @include center-box;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: $color-secondary;
     font-size: 1rem;
+    line-height: 1.1rem;
     color: $white;
+    padding: 15px 0;
     @include mq(large) {
         font-size: 1.2rem;
     }
@@ -112,9 +106,8 @@
 }
 
 .btn {
-    @include center;
     color: $white;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
     padding: 15px 30px;
     margin-top: 15px;
@@ -128,17 +121,28 @@
     }
     @include mq(small) {
         font-size: 1.2rem;
+        border: none;
     }
 }
 
 .refresh-btn {
     margin-bottom: 20px;
+    background-color: $light-purple;
+    color: $color-primary;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+        color: $color-secondary;
+        background-color: darken($color: $light-purple, $amount: 10);
+    }
 }
 
-// .send-btn {
-
-// }
-
+.send-btn {
+    margin: 20px 0 ;
+}
 .button-container {
     display: flex;
     width: 100%;
@@ -146,6 +150,9 @@
 }
 
 .remove-btn{
-   width: 50%;
+   width: 60%;
    visibility: hidden;
+   @include mq(medium) {
+    width: 40%;
+   }
 }
