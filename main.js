@@ -6,6 +6,7 @@ const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA
 const url ='https://picsum.photos/200';
 let img = document.getElementById('image');
 const newImgBtn = document.getElementById('new-image');
+const removeBtn = document.getElementById('remove');
 
 // var arrays/////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -49,9 +50,7 @@ function fetchImage() {
     .catch(error => console.error(error));
 }
 
-newImgBtn.addEventListener('click', fetchImage);
 
-window.addEventListener('load', fetchImage('https://picsum.photos/200'));
 
 
 // assign data to email/////////////////////////////////////////////////
@@ -127,7 +126,7 @@ function displayData() {
    ${generateListItems(lastEmail)}
    </ul>
    `;
-
+   removeBtn.style.visibility = 'visible';
 }
 
 function generateListItems(arg) {
@@ -152,3 +151,24 @@ function generateImageItems(arg) {
     }
     return items;
 }
+
+
+function clearAll() {
+   const content = document.querySelector('.assigned');
+
+    lastEmail.length = 0;
+    pic.length = 0;
+    content.innerHTML = "";
+    removeBtn.style.visibility = 'hidden';
+    console.log(lastEmail);
+    console.log(pic);
+}
+
+// events ///////////////////////////////////////////////////////////
+
+
+newImgBtn.addEventListener('click', fetchImage);
+
+window.addEventListener('load', fetchImage('https://picsum.photos/200'));
+
+removeBtn.addEventListener('click', clearAll);

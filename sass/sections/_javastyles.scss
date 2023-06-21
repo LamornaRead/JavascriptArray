@@ -22,11 +22,15 @@
     text-transform: uppercase;
     padding: 15px 10px;
     margin: 0;
+    @include mq(medium) {
+        font-size: .9rem;
+    }
 }
 
 .user-imgs {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     padding: 16px;
     gap: 15px;
 }
@@ -37,3 +41,4 @@
     border-radius: 5px;
     border: 1px solid $light-purple;
 }
+

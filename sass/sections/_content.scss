@@ -121,25 +121,31 @@
     border-radius: 5px;
     border: none;
     background-color: $color-secondary;
-}
-
-.refresh-btn {
-    margin-bottom: 20px;
-    &:hover {
-        background-color: lighten($color: $color-secondary, $amount: 10%);
-    }
-}
-
-.send-btn {
-    
     &:hover {
         text-shadow: $white 1px 0 10px;
         box-shadow: 0 0 20px 10px rgba($color: $white, $alpha: .6);
+        background-color: lighten($color: $color-secondary, $amount: 10%);
     }
     @include mq(small) {
         font-size: 1.2rem;
     }
-    @include mq(large) {
-        font-size: 1.5rem;
-    }
+}
+
+.refresh-btn {
+    margin-bottom: 20px;
+}
+
+// .send-btn {
+
+// }
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.remove-btn{
+   width: 50%;
+   visibility: hidden;
 }
