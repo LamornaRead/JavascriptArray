@@ -28,6 +28,31 @@
     justify-content: center;
 }
 
+//between content /////////////////////////////////////////////////////////
+
+.below {
+    @include center;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+    gap: 10px;
+}
+
+.below-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    @include mq(small) {
+        font-size: 1.1rem;
+    }
+    @include mq(medium) {
+        font-size: 1.2rem;
+    }
+}
+
+.below-symbol {
+    font-size: 2rem;
+}
 // content ///////////////////////////////////////////////////////////////
 
 .header-text {
