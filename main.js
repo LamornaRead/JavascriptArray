@@ -39,6 +39,7 @@ function validateEmail() {
     assignImage();
     displayData();
     console.log('Success');
+    
 }
 
 
@@ -57,14 +58,14 @@ function fetchImage() {
 
 function assignImage() {
 
-    if(checkEmailPresent(input.value)) { // if the image is present
+    if(checkEmailPresent(input.value)) { // if the email is present
 
         //get the index of the email in array
         let emailIndex = lastEmail.indexOf(input.value);
 
         // console log to check the index matches
-        // console.log(emailIndex);
-
+        console.log(emailIndex);
+        
         //use the index to push the image in the array
         if(checkImage(img.src)) {
 
@@ -118,7 +119,6 @@ function checkImage(src) {
 
 
 function displayData() {
-   let emailIndex = lastEmail.indexOf(input.value);
    const content = document.querySelector('.assigned');
    
    content.innerHTML = `

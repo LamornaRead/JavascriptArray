@@ -457,11 +457,10 @@ a {
   /* line 7, ../JavascriptArray/sass/containers/_container.scss */
   .container-inner {
     margin-top: 50px;
-    width: 80%;
   }
 }
 
-/* line 18, ../JavascriptArray/sass/containers/_container.scss */
+/* line 17, ../JavascriptArray/sass/containers/_container.scss */
 .container-flex {
   display: flex;
   justify-content: center;
@@ -471,7 +470,7 @@ a {
 }
 
 @media (min-width: 1200px) {
-  /* line 18, ../JavascriptArray/sass/containers/_container.scss */
+  /* line 17, ../JavascriptArray/sass/containers/_container.scss */
   .container-flex {
     flex-direction: row;
   }
@@ -548,7 +547,7 @@ a {
   justify-content: center;
 }
 
-/* line 32, ../JavascriptArray/sass/sections/_content.scss */
+/* line 33, ../JavascriptArray/sass/sections/_content.scss */
 .header-text {
   color: #fff;
   font-size: 1.5rem;
@@ -561,13 +560,13 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 32, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 33, ../JavascriptArray/sass/sections/_content.scss */
   .header-text {
     font-size: 2.5rem;
   }
 }
 
-/* line 46, ../JavascriptArray/sass/sections/_content.scss */
+/* line 47, ../JavascriptArray/sass/sections/_content.scss */
 .subheader-text {
   font-size: 1rem;
   letter-spacing: 3px;
@@ -577,13 +576,13 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 46, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 47, ../JavascriptArray/sass/sections/_content.scss */
   .subheader-text {
     font-size: 1.5rem;
   }
 }
 
-/* line 57, ../JavascriptArray/sass/sections/_content.scss */
+/* line 58, ../JavascriptArray/sass/sections/_content.scss */
 .img {
   min-width: 100px;
   max-width: 250px;
@@ -594,25 +593,25 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 57, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 58, ../JavascriptArray/sass/sections/_content.scss */
   .img {
     border: 5px solid #fff;
   }
 }
 
-/* line 70, ../JavascriptArray/sass/sections/_content.scss */
+/* line 72, ../JavascriptArray/sass/sections/_content.scss */
 .enter-email {
   background-color: #5b308b;
   border-radius: 0 0 10px 10px;
   border-top: 1px solid grey;
 }
 
-/* line 76, ../JavascriptArray/sass/sections/_content.scss */
+/* line 78, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
-/* line 80, ../JavascriptArray/sass/sections/_content.scss */
+/* line 82, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   display: flex;
   justify-content: center;
@@ -626,29 +625,28 @@ a {
 }
 
 @media (min-width: 992px) {
-  /* line 80, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 82, ../JavascriptArray/sass/sections/_content.scss */
   .form-item-one {
     font-size: 1.2rem;
   }
 }
 
-/* line 95, ../JavascriptArray/sass/sections/_content.scss */
+/* line 97, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
   border: none;
   border: 1px solid grey;
   padding: 10px 15px;
-  border-radius: 5px;
 }
 
-/* line 102, ../JavascriptArray/sass/sections/_content.scss */
+/* line 104, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 108, ../JavascriptArray/sass/sections/_content.scss */
+/* line 112, ../JavascriptArray/sass/sections/_content.scss */
 .btn {
   color: #fff;
   font-size: .9rem;
@@ -660,7 +658,7 @@ a {
   background-color: #291e39;
 }
 
-/* line 117, ../JavascriptArray/sass/sections/_content.scss */
+/* line 121, ../JavascriptArray/sass/sections/_content.scss */
 .btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
@@ -668,14 +666,14 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 108, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 112, ../JavascriptArray/sass/sections/_content.scss */
   .btn {
     font-size: 1.2rem;
     border: none;
   }
 }
 
-/* line 128, ../JavascriptArray/sass/sections/_content.scss */
+/* line 132, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn {
   margin-bottom: 20px;
   background-color: #f4ebff;
@@ -685,34 +683,35 @@ a {
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* line 137, ../JavascriptArray/sass/sections/_content.scss */
+/* line 142, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn:hover {
   color: #291e39;
   background-color: #d8b8ff;
 }
 
-/* line 143, ../JavascriptArray/sass/sections/_content.scss */
+/* line 148, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn {
   margin: 20px 0;
 }
 
-/* line 146, ../JavascriptArray/sass/sections/_content.scss */
+/* line 152, ../JavascriptArray/sass/sections/_content.scss */
 .button-container {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-/* line 152, ../JavascriptArray/sass/sections/_content.scss */
+/* line 158, ../JavascriptArray/sass/sections/_content.scss */
 .remove-btn {
   width: 60%;
   visibility: hidden;
 }
 
 @media (min-width: 768px) {
-  /* line 152, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 158, ../JavascriptArray/sass/sections/_content.scss */
   .remove-btn {
     width: 40%;
   }

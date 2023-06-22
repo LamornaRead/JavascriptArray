@@ -28,6 +28,7 @@
     justify-content: center;
 }
 
+// content ///////////////////////////////////////////////////////////////
 
 .header-text {
     color: $white;
@@ -66,6 +67,7 @@
     }
 }
 
+// email //////////////////////////////////////////////////////////
 
 .enter-email {
     background-color: $color-primary;
@@ -77,7 +79,7 @@
    width: 100%;
 }
 
-.form-item-one {
+.form-item-one { // enter email
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -92,18 +94,20 @@
     }
 }
 
-.form-item-two {
+.form-item-two { // email input field
     font-size: .9rem;
     outline: none;
     border: none;
     border: 1px solid grey;
     padding: 10px 15px;
-    border-radius: 5px;
+    // border-radius: 5px;
     &:focus {
         box-shadow: 0 0 20px rgba(255, 255, 255, 1);
         border: 1px solid rgba(81, 203, 238, 1);
     }
 }
+
+// buttons ////////////////////////////////////////////////////
 
 .btn {
     color: $white;
@@ -134,6 +138,7 @@
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
+    box-shadow: 0 0 20px 10px rgba($color: $black, $alpha: .4);
     &:hover {
         color: $color-secondary;
         background-color: darken($color: $light-purple, $amount: 10);
@@ -143,6 +148,7 @@
 .send-btn {
     margin: 20px 0 ;
 }
+
 .button-container {
     display: flex;
     width: 100%;
