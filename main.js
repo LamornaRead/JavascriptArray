@@ -1,7 +1,7 @@
 // vars //////////////////////////////////////////////////////////////////////////////////////////////////////////
 const email = document.getElementById('email').value;
 const input = document.getElementById('email');
-const emailFormat = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const emailFormat = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const url ='https://picsum.photos/200';
 let img = document.getElementById('image');
 const newImgBtn = document.getElementById('new-image');
@@ -24,12 +24,13 @@ function validateEmail() {
           input.style.border = '1px solid red';
           input.style.boxShadow = '0 0 20px red';
           input.placeholder = 'Please fill in email.';
+          invalidEmail();
           return;
     } 
     input.style.border = '1px solid grey';
     input.style.boxShadow = '';
     input.placeholder = '';
-
+    vaildEmail();
     assignImage();
     displayData();
     console.log('Success'); 
@@ -57,26 +58,25 @@ function assignImage() {
         let emailIndex = lastEmail.indexOf(input.value);
 
         // console log to check the index matches
-        console.log(emailIndex);
+        // console.log(emailIndex);
         
         //use the index to push the image in the array
         if(checkImage(img.src)) {
-
+             imageThere();
         } else {
             pic[emailIndex].push(img.src);
+            imageNotThere();
         }          
     } else { // if the email isnt present //
         lastEmail.push(input.value);
         //creates new image array for new email
         pic.push([img.src]);
+        imageNotThere();
     }
-    
-    
-    checkImage(img.src);
 
-    console.log(lastEmail);
+    // console.log(lastEmail);
     // console.log(input.value);
-    console.log(pic);
+    // console.log(pic);
     // console.log(img.src);
 }
 
@@ -108,6 +108,38 @@ function checkImage(src) {
 }
 
 
+
+// error display fuctions /////////////////////////////////////////////////
+
+function invalidEmail() {
+    const err = document.getElementById('emailErr');
+    if(!emailFormat.test(input.value)) {  
+        err.style.visibility = "visible";
+        err.style.padding ="15px 0";
+    }
+}
+
+function vaildEmail() {
+    const err = document.getElementById('emailErr');
+    if(emailFormat.test(input.value)) {  
+        err.style.visibility = "hidden";
+        err.style.padding = "0";
+    }
+}
+
+
+
+function imageThere() {
+   const err = document.getElementById('imageErr');
+   err.style.visibility = 'visible';
+   err.style.padding = '20px 0';
+}
+
+function imageNotThere() {
+    const err = document.getElementById('imageErr');
+    err.style.visibility = 'hidden';
+    err.style.padding = '0';
+}
 //display functions ///////////////////////////////////////////////////////
 
 

@@ -592,33 +592,17 @@ a {
   text-align: center;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 0 10px;
   margin: 0;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 @media (min-width: 768px) {
   /* line 58, ../JavascriptArray/sass/sections/_content.scss */
   .header-text {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
-/* line 72, ../JavascriptArray/sass/sections/_content.scss */
-.subheader-text {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 0;
-}
-
-@media (min-width: 992px) {
-  /* line 72, ../JavascriptArray/sass/sections/_content.scss */
-  .subheader-text {
-    font-size: 1.5rem;
-  }
-}
-
-/* line 83, ../JavascriptArray/sass/sections/_content.scss */
+/* line 73, ../JavascriptArray/sass/sections/_content.scss */
 .img {
   min-width: 100px;
   max-width: 250px;
@@ -629,25 +613,25 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 83, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 73, ../JavascriptArray/sass/sections/_content.scss */
   .img {
     border: 5px solid #fff;
   }
 }
 
-/* line 97, ../JavascriptArray/sass/sections/_content.scss */
+/* line 87, ../JavascriptArray/sass/sections/_content.scss */
 .enter-email {
   background-color: #5b308b;
   border-radius: 0 0 10px 10px;
   border-top: 1px solid grey;
 }
 
-/* line 103, ../JavascriptArray/sass/sections/_content.scss */
+/* line 93, ../JavascriptArray/sass/sections/_content.scss */
 .email-item {
   width: 100%;
 }
 
-/* line 107, ../JavascriptArray/sass/sections/_content.scss */
+/* line 97, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-one {
   display: flex;
   justify-content: center;
@@ -655,19 +639,12 @@ a {
   width: 100%;
   background-color: #291e39;
   font-size: 1rem;
-  line-height: 1.1rem;
+  line-height: 1rem;
   color: #fff;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
-@media (min-width: 992px) {
-  /* line 107, ../JavascriptArray/sass/sections/_content.scss */
-  .form-item-one {
-    font-size: 1.2rem;
-  }
-}
-
-/* line 122, ../JavascriptArray/sass/sections/_content.scss */
+/* line 109, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two {
   font-size: .9rem;
   outline: none;
@@ -676,13 +653,52 @@ a {
   padding: 10px 15px;
 }
 
-/* line 129, ../JavascriptArray/sass/sections/_content.scss */
+/* line 116, ../JavascriptArray/sass/sections/_content.scss */
 .form-item-two:focus {
   box-shadow: 0 0 20px white;
   border: 1px solid #51cbee;
 }
 
-/* line 137, ../JavascriptArray/sass/sections/_content.scss */
+/* line 123, ../JavascriptArray/sass/sections/_content.scss */
+.error-email {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  color: red;
+  gap: 10px;
+  text-shadow: red 1px 0 30px;
+}
+
+/* line 132, ../JavascriptArray/sass/sections/_content.scss */
+.error-image {
+  color: red;
+  font-size: 0.9rem;
+  text-shadow: red 1px 0 30px;
+}
+
+@media (min-width: 576px) {
+  /* line 132, ../JavascriptArray/sass/sections/_content.scss */
+  .error-image {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 132, ../JavascriptArray/sass/sections/_content.scss */
+  .error-image {
+    font-size: 1.1rem;
+  }
+}
+
+/* line 143, ../JavascriptArray/sass/sections/_content.scss */
+.error-container {
+  visibility: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* line 152, ../JavascriptArray/sass/sections/_content.scss */
 .btn {
   color: #fff;
   font-size: .9rem;
@@ -694,7 +710,7 @@ a {
   background-color: #291e39;
 }
 
-/* line 146, ../JavascriptArray/sass/sections/_content.scss */
+/* line 161, ../JavascriptArray/sass/sections/_content.scss */
 .btn:hover {
   text-shadow: #fff 1px 0 10px;
   box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.6);
@@ -702,14 +718,14 @@ a {
 }
 
 @media (min-width: 576px) {
-  /* line 137, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 152, ../JavascriptArray/sass/sections/_content.scss */
   .btn {
     font-size: 1.2rem;
     border: none;
   }
 }
 
-/* line 157, ../JavascriptArray/sass/sections/_content.scss */
+/* line 172, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn {
   margin-bottom: 20px;
   background-color: #f4ebff;
@@ -722,32 +738,32 @@ a {
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* line 167, ../JavascriptArray/sass/sections/_content.scss */
+/* line 182, ../JavascriptArray/sass/sections/_content.scss */
 .refresh-btn:hover {
   color: #291e39;
   background-color: #d8b8ff;
 }
 
-/* line 173, ../JavascriptArray/sass/sections/_content.scss */
+/* line 188, ../JavascriptArray/sass/sections/_content.scss */
 .send-btn {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
-/* line 177, ../JavascriptArray/sass/sections/_content.scss */
+/* line 192, ../JavascriptArray/sass/sections/_content.scss */
 .button-container {
   display: flex;
   width: 100%;
   justify-content: center;
 }
 
-/* line 183, ../JavascriptArray/sass/sections/_content.scss */
+/* line 198, ../JavascriptArray/sass/sections/_content.scss */
 .remove-btn {
   width: 60%;
   visibility: hidden;
 }
 
 @media (min-width: 768px) {
-  /* line 183, ../JavascriptArray/sass/sections/_content.scss */
+  /* line 198, ../JavascriptArray/sass/sections/_content.scss */
   .remove-btn {
     width: 40%;
   }
